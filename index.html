@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Survey</title>
+    <link type="text/css" rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+        
+   <header>
+        <h1 id="title">Sports Center Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our services</p>
+      
+            <form id="survey-form">
+                <div class="div-group">
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your name" required>
+                 </div>
+
+                <div class="div-group">
+                    <label id="email-label" for="email">email: </label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+
+                <div class="div-group">
+                    <label id ="age-label" for="age">Age:</label>
+                    <input id="number-label"type="number"  name="age" step="1" min="1" max="112" placeholder="Enter your age">
+                </div>
+
+                <div class="div-group">
+                   <p> Which sports Activity do like most in facility?
+                    <select id="dropdown" name="sports"  required>
+                        <option disabled selected value>Swimming</option>
+                        <option  value>Soccer</option>
+                        <option  value>Basketball</option>
+                        <option  value>Table tenis</option>
+                        <option  value>Bowling</option>
+                    </select>
+                </div>
+                    
+                <div class="div-group">
+                    <p>Gender:</p>
+                    <label id= "label-gender"> 
+                        Male <input class= "input-radio" type="radio" name="gender">
+                      </label>
+                      <label id= "label-gender"> 
+                        Female <input class= "input-radio" type="radio" name="gender">
+                      </label>
+                      <label id= "label-gender"> 
+                        Other <input class= "input-radio" type="radio" name="gender">
+                      </label>
+                    
+                </div>
+
+                <div class="div-group">
+                    <p>Are you Satisfied with the hours of service for the ports Facility Center?</p>
+                    <label id="input-checkbox">Yes<input type="checkbox" id="input-checkbox" name="input-checkbox" value="yes">
+                     </label>
+                     <label id="input-checkbox">No<input type="checkbox" id="input-checkbox" name="input-checkbox" value="no"></label>
+                    <label id="input-checkbox">N/A<input type="checkbox" id="input-checkbox" name="input-checkbox" value="N/A"></label>
+                    
+                   
+                </div>
+
+                <div class="div-group">
+                    <p>If No, please explain:</p>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                  
+                </div>
+                
+                <div class="div-group">
+                    <p>Please provide any additional comments:</p>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                  
+                </div>
+
+                <div class="div-group">
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+            </form>
+    </header>
+    
+</body>
+</html>
